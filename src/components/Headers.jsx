@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
 import Logo from '../../public/white-bg-logo.png'
-import Image from 'next/Image';
+import Image from 'next/image'
 
 const Headers = () => {
 

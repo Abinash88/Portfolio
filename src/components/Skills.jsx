@@ -51,7 +51,7 @@ const Skills = () => {
                     </div>
                     <div className="w-full h-[60%] p-7 relative">
 
-                        <Image src={LittleGirl} className='w-[500px] lg:block hidden' />
+                        <Image alt='image' src={LittleGirl} className='w-[500px] lg:block hidden' />
                     </div>
                 </div>
                 <div data-aos="fade-down"   data-aos-easing="ease-in" className="box2  rounded-md p-3 md:p-5  flex justify-evenly w-full flex-col items-center">

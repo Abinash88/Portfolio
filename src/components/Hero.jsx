@@ -1,11 +1,11 @@
 'use client'
 
 
-import Image from 'next/image';
 import Link from 'next/link';
-import Images from '../../public/mobiles.png';
+import HeroImage from '../../public/mobiles.png';
 import Ball from '../../public/ball.png';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
 
@@ -54,9 +54,9 @@ export default function Hero() {
           <Link  data-aos-duration="600" data-aos-delay="150" data-aos="slide-right" data-aos-easing="ease-in" href={'/'}><button className='herobtn text-white px-14 py-3 mt-14 rounded-sm font-semibold '>Hire Me</button> </Link>
         </div>
         <div className="md:w-[50%] w-[100%] h-full flex md:relative absolute right-[-240px] md:right-[0] md:bottom-0  justify-center items-start pt-[100px]">
-          <Image style={{ top: num * .3 }} data-aos="zoom-out" data-aos-easing="ease-in" src={Images} className={`w-[500px]  sm:relative  heroimage`} />
+          <Image alt='image' style={{ top: num * .3 }} data-aos="zoom-out" data-aos-easing="ease-in" src={HeroImage} className={`w-[500px]  sm:relative  heroimage`} />
           <div style={{ top: -num }} className={`absolute ball z-0  right-[-40px] sm:right-[-50px]`}>
-            <Image data-aos="zoom-in" data-aos-easing="ease-in" src={Ball} className={`w-[150px] md:static absolute right-0 opacity-50`} />
+            <Image data-aos="zoom-in" alt='image' data-aos-easing="ease-in" src={Ball} className={`w-[150px] md:static absolute right-0 opacity-50`} />
           </div>
         </div>
       </div>
