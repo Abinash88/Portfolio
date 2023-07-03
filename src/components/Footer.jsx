@@ -4,6 +4,12 @@ import Logo from '../../public/white-logo.png'
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
+
+    const dateYear = () => {
+        const years = new Date().getFullYear();
+        return years
+    }
+    
     return (
         <div className='w-full h-auto bg-purple-700 flex items-end'>
             <div className="w-[80%] m-auto flex-col items-center pb-[50px] pt-[40px] h-[90%] relative  flex">
@@ -36,7 +42,7 @@ const Footer = () => {
                         <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#Contact`}>Contact</a></li>
                     </ul>
                 </div>
-                <span className='text-white font-light mt-10'>Copyright © 2024. All rights Reserved Abinash.</span>
+                <span className='text-white font-light mt-10'>Copyright © {dateYear()}. All rights Reserved Abinash.</span>
 
             </div>
         </div>
