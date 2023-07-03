@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <main id='Hero' style={{ height: 'calc(100vh - 70px)' }} className=" w-[100%] flex relative  items-center justify-between ">
       <div className="w-[80%] m-auto flex relative  h-full justify-between ">
-        <div className="md:w-[50%] w-100% h-full  pt-[120px] ">
+        <div className="md:w-[50%] w-100% h-full  pt-[60px] mb-5 md:pt-[120px] ">
           <h3  data-aos-duration="600" data-aos="slide-right" data-aos-easing="ease-in" className='smallhead text-[19px]  md:text-[27px] '>Hi! I am</h3>
           <h2   data-aos-duration="600" data-aos-delay="50" data-aos="slide-right" data-aos-easing="ease-in" className='heads text-[40px] leading-tight md:leading-normal md:text-[45px] lg:text-[60px] xl:text-[70px] mr-10  mt-3 mb-9 '>Abinash, <span className='headspan'>Mern <br />Stack</span> Developer</h2>
           <p  data-aos-duration="600" data-aos-delay="100" data-aos="slide-right" data-aos-easing="ease-in" className='md:text-[16px] relative z-10 text-[15px]'>Welcome to my world of web development expertise! As, a skilled MERN stack developer ready to turn your ideas into stunning digital experiences."</p>

@@ -47,18 +47,18 @@ const Contact = () => {
             <div className="flex md:w-[80%] w-[90%] lg:h-[90%] h-auto lg:flex-row flex-col items-center mx-auto">
                 <div className="md:w-[50%] w-[100%] flex flex-col justify-center ">
                     <h2  data-aos="slide-right" data-aos-duration='600' className='text-[28px] Contactsection md:text-[55px] '>Contact Me</h2>
-                    <p data-aos="slide-right" data-aos-duration='600' className='mt-8 w-[90%]'>Let's Connect! Share your website idea with me by filling out the following form. I'm excited to bring your vision to life.</p>
+                    <p data-aos="slide-right" data-aos-duration='600' className='mt-8 w-[90%] md:text-[17px] text-[15px]'>Let's Connect! Share your website idea with me by filling out the following form. I'm excited to bring your vision to life.</p>
                     <div data-aos="slide-right" data-aos-duration='600' data-aos-delay='100' className="mt-9 flex space-x-3 items-center">
                         <PhoneIcon className='h-[50px] broder text-red-400 border-red-400 border-2 rounded-full  p-2' />
-                        <span className='text-[17px] font-semibold' >9834734323</span>
+                        <span className='md:text-[17px] text-[15px] font-semibold' >9834734323</span>
                     </div>
                     <div data-aos="slide-right" data-aos-duration='600' data-aos-delay='200' className="mt-5 flex space-x-3 items-center">
                         <EnvelopeIcon className='h-[50px] broder text-red-400 border-red-400 border-2 rounded-full  p-2' />
-                        <span className='text-[17px] font-semibold' >subediabinash@gmail.com</span>
+                        <span className='md:text-[17px] text-[15px] font-semibold' >subediabinash@gmail.com</span>
                     </div>
                     <div data-aos="slide-right" data-aos-duration='600' data-aos-delay='300' className="mt-5 flex space-x-3 items-center">
                         <MapIcon className='h-[50px] broder text-red-400 border-red-400 border-2 rounded-full  p-2' />
-                        <span className='text-[17px] font-semibold' >Nepal jhapa kankai-2 surunga </span>
+                        <span className='md:text-[17px] text-[15px] font-semibold' >Nepal jhapa kankai-2 surunga </span>
                     </div>
                     
                 </div>
