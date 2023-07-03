@@ -138,6 +138,7 @@ p{
 .herobtn{
   background-color:var(--maincolor) ;
   transition: .2s;
+  margin-top: 100px;
 }
 
 .herobtn:hover{

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Logo from '../../public/white-logo.png'
-import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -20,15 +20,15 @@ const Footer = () => {
 
                     <div className="flex space-x-3">
                         <div className="bg-red-500 hover:bg-red-600 w-10 flex items-center justify-center h-10 rounded-full  cursor-pointer mt-8 p-3">
-                            <a href="">  <FaFacebookF className='h-7 text-white
+                            <a href="https://www.facebook.com/abinash.sub/">  <FaFacebookF className='h-7 text-white
                       '/></a>
                         </div>
                         <div className="bg-red-500 hover:bg-red-600 w-10 flex items-center justify-center h-10 rounded-full  cursor-pointer mt-8 p-3">
-                            <a href=""> <FaInstagram className='h-7 text-white
+                            <a href="https://www.instagram.com/abinash84321/"> <FaInstagram className='h-7 text-white
                       '/></a>
                         </div>
                         <div className="bg-red-500 hover:bg-red-600 w-10 flex items-center justify-center h-10 rounded-full  cursor-pointer mt-8 p-3">
-                            <a href=""><FaLinkedin className='h-7 text-white
+                            <a href="https://twitter.com/Abinashsub"><FaTwitter className='h-7 text-white
                       '/></a>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                         <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#Contact`}>Contact</a></li>
                     </ul>
                 </div>
-                <span className='text-white font-light mt-10'>Copyright © {dateYear()}. All rights Reserved Abinash.</span>
+                <span className='text-white font-light mt-10'>Copyright © {dateYear()}. All rights Reserved by Abinash.</span>
 
             </div>
         </div>

@@ -50,11 +50,14 @@ export default function Hero() {
         <div className="md:w-[50%] w-100% h-full  pt-[120px] ">
           <h3  data-aos-duration="600" data-aos="slide-right" data-aos-easing="ease-in" className='smallhead text-[19px]  md:text-[27px] '>Hi! I am</h3>
           <h2   data-aos-duration="600" data-aos-delay="50" data-aos="slide-right" data-aos-easing="ease-in" className='heads text-[40px] leading-tight md:leading-normal md:text-[45px] lg:text-[60px] xl:text-[70px] mr-10  mt-3 mb-9 '>Abinash, <span className='headspan'>Mern <br />Stack</span> Developer</h2>
-          <p  data-aos-duration="600" data-aos-delay="100" data-aos="slide-right" data-aos-easing="ease-in" className='md:text-[16px] text-[15px]'>Welcome to my world of web development expertise! As, a skilled MERN stack developer ready to turn your ideas into stunning digital experiences."</p>
-          <Link  data-aos-duration="600" data-aos-delay="150" data-aos="slide-right" data-aos-easing="ease-in" href={'/'}><button className='herobtn text-white px-14 py-3 mt-14 rounded-sm font-semibold '>Hire Me</button> </Link>
+          <p  data-aos-duration="600" data-aos-delay="100" data-aos="slide-right" data-aos-easing="ease-in" className='md:text-[16px] relative z-10 text-[15px]'>Welcome to my world of web development expertise! As, a skilled MERN stack developer ready to turn your ideas into stunning digital experiences."</p>
+          <div className="mt-[90px]">
+          <Link  data-aos-duration="600" data-aos-delay="150" data-aos="slide-right" data-aos-easing="ease-in" href='#Contact' className='herobtn text-white px-14 py-3  rounded-sm  font-semibold '>
+           Hire Me </Link>
+          </div>
         </div>
-        <div className="md:w-[50%] w-[100%] h-full flex md:relative absolute right-[-240px] md:right-[0] md:bottom-0  justify-center items-start pt-[100px]">
-          <Image alt='image' style={{ top: num * .3 }} data-aos="zoom-out" data-aos-easing="ease-in" src={HeroImage} className={`w-[500px]  sm:relative  heroimage`} />
+        <div className="md:w-[50%] w-[100%] h-full flex md:relative absolute right-[-240px] md:right-[0] z-0 md:bottom-0  justify-center items-start pt-[100px]">
+          <Image alt='image' style={{ top: num * .3 }} data-aos="zoom-out" data-aos-easing="ease-in" src={HeroImage} className={`z-0 w-[500px]  sm:relative  heroimage`} />
           <div style={{ top: -num }} className={`absolute ball z-0  right-[-40px] sm:right-[-50px]`}>
             <Image data-aos="zoom-in" alt='image' data-aos-easing="ease-in" src={Ball} className={`w-[150px] md:static absolute right-0 opacity-50`} />
           </div>
