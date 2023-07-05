@@ -1,4 +1,4 @@
-// import SendMail from "./Email";
+import SendMail from "./Email";
 
 const handler = async (req, res) => {
     const bodys = req.body
@@ -7,11 +7,11 @@ const handler = async (req, res) => {
 
     if(!firstname || !lastname || !email || !subject || !message) {return res.status(401).json({success:false, message:'Please fill in all fields', bodys});}
     console.log(firstname, lastname, email, subject, message)
-    // try{
-    //     SendMail(firstname, lastname, email, subject, message);
-    // }catch(err) {
-    //     console.log(err.message)
-    // }
+    try{
+        SendMail(firstname, lastname, email, subject, message);
+    }catch(err) {
+        console.log(err.message)
+    }
 
 
     res.status(200).json({success:true, message:'Email send successfully'});
