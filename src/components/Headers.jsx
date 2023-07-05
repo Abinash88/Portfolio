@@ -1,9 +1,9 @@
 'use client'
 
-import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
 import Logo from '../../public/white-bg-logo.png'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Headers = () => {
 
@@ -46,11 +46,11 @@ const Headers = () => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
           </svg>
             <ul className='flex justify-end items-start md:items-center md:flex-row flex-col md:h-full  space-y-6 md:space-y-0 md:pt-0 pt-[80px]'>
-              <li><a className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Hero'>Home</a></li>
-              <li><a className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Skill' >Skills</a></li>
-              <li><a className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#About'>About</a></li>
-              <li><a className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Services'>Services</a></li>
-              <li><a className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Contact'>Contact</a></li>
+              <li><Link className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Hero'>Home</Link></li>
+              <li><Link className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Skill' >Skills</Link></li>
+              <li><Link className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#About'>About</Link></li>
+              <li><Link className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Services'>Services</Link></li>
+              <li><Link className='links pb-2   text-white md:text-[15px]  text-[18px] md:text-gray-800' href='#Contact'>Contact</Link></li>
             </ul>
           </nav>
           <svg onClick={HandleBars} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`  h-8 md:hidden cursor-pointer relative `}>

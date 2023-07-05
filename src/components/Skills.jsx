@@ -2,10 +2,10 @@
 
 import React, { useEffect } from 'react';
 import LittleGirl from '../../public/little-gril.png'
-import Image from 'next/image';
 import dynamic from 'next/dynamic';
 const AOS = dynamic(() => import('aos'));
 import 'aos/dist/aos.css';
+import Image from 'next/image'
 
 const Skills = () => {
 

@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import React from 'react'
 import User from '../../public/Abinsh.png'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const About = () => {

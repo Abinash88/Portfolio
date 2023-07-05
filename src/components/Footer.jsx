@@ -1,7 +1,8 @@
-import Image from 'next/image'
 import React from 'react'
 import Logo from '../../public/white-logo.png'
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import Image from 'next/image'
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -20,26 +21,26 @@ const Footer = () => {
 
                     <div className="flex space-x-3">
                         <div className="bg-red-500 hover:bg-red-600 w-10 flex items-center justify-center h-10 rounded-full  cursor-pointer mt-8 p-3">
-                            <a href="https://www.facebook.com/abinash.sub/">  <FaFacebookF className='h-7 text-white
-                      '/></a>
+                            <Link href="https://www.facebook.com/abinash.sub/">  <FaFacebookF className='h-7 text-white
+                      '/></Link>
                         </div>
                         <div className="bg-red-500 hover:bg-red-600 w-10 flex items-center justify-center h-10 rounded-full  cursor-pointer mt-8 p-3">
-                            <a href="https://www.instagram.com/abinash84321/"> <FaInstagram className='h-7 text-white
-                      '/></a>
+                            <Link href="https://www.instagram.com/abinash84321/"> <FaInstagram className='h-7 text-white
+                      '/></Link>
                         </div>
                         <div className="bg-red-500 hover:bg-red-600 w-10 flex items-center justify-center h-10 rounded-full  cursor-pointer mt-8 p-3">
-                            <a href="https://twitter.com/Abinashsub"><FaTwitter className='h-7 text-white
-                      '/></a>
+                            <Link href="https://twitter.com/Abinashsub"><FaTwitter className='h-7 text-white
+                      '/></Link>
                         </div>
                     </div>
                 </div>
                 <div className="flex-1 flex flex-col items-center mt-10">
                     <ul className='flex justify-end items-start   '>
-                        <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href='#Hero'>Home</a></li>
-                        <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href='#Skill' >Skills</a></li>
-                        <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#About`}>About</a></li>
-                        <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#Services`}>Services</a></li>
-                        <li><a className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#Contact`}>Contact</a></li>
+                        <li><Link className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href='#Hero'>Home</Link></li>
+                        <li><Link className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href='#Skill' >Skills</Link></li>
+                        <li><Link className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#About`}>About</Link></li>
+                        <li><Link className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#Services`}>Services</Link></li>
+                        <li><Link className='links pb-2 md:pb-0 text-white md:text-[15px]   text-[14px] md:text-gray-100' href={`#Contact`}>Contact</Link></li>
                     </ul>
                 </div>
                 <span className='text-white font-light mt-10'>Copyright © {dateYear()}. All rights Reserved by Abinash.</span>
