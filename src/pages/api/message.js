@@ -2,7 +2,7 @@ import SendMail from "./Email";
 
 const handler = async(req, res) => {
     console.log(req.body)
-    if(req.method !== 'POST') return res.status(400).json({success:false, message:' Post method only allowed'})
+    if(req.method !== 'POST') return res.status(405).json({success:false, message:' Post method only allowed'})
     const {firstname, lastname, email, subject, message} = req.body;
 
     if(!firstname || !lastname || !email || !subject || !message) return res.status(401).json({success:false, message:'Please fill in all fields'});
