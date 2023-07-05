@@ -4,16 +4,18 @@ import nodemailer from 'nodemailer';
 
 const SendMail = ( firstname, lastname, email, subject , message) => {
 
+    const email = process.env.EMAIL;
+    const password =process.env.PASSWORD;
+
     const transporter = nodemailer.createTransport({
-        service: 'smtp.gmail.com',
-        port:465,
-        // secure: true,
+        service: 'gmail',
         auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD
+            user: email,
+            pass: password,
         }
     });
 
+    
     async function main() {
         const info = await transporter.sendMail({
             from: email, // sender address
