@@ -14,7 +14,6 @@ const Contact = () => {
     const [subject, setsubject] = useState('');
 
     const SendMessage = async(e) => {
-        console.log('message sent')
         e.preventDefault();
         try{
             const res = await fetch('/api/message',{

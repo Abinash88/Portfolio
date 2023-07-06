@@ -14,7 +14,7 @@ const SendMail = (firstName, lastName, email, Subject, message) => {
 
 
     // export this from the api route to remove api unnecessary warning
-   
+
     // https://dev.to/chandrapantachhetri/sending-emails-securely-using-node-js-nodemailer-smtp-gmail-and-oauth2-g3a
     async function createTransporter() {
         const OAuth2Client = new google.auth.OAuth2(
@@ -36,15 +36,17 @@ const SendMail = (firstName, lastName, email, Subject, message) => {
             });
         });
 
+        console.log(accessToken,'= accesstoken')
+
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
                 type: "OAuth2",
                 user: process.env.EMAIL,
+                accessToken,
                 clientId: process.env.OAUTH_CLIENTID,
                 clientSecret: process.env.OAUTH_CLIENT_SECRET,
                 refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-                accessToken,
             },
             tls: {
                 // thanks to: https://medium.com/@nickroach_50526/sending-emails-with-node-js-using-smtp-gmail-and-oauth2-316fe9c790a1
@@ -92,8 +94,8 @@ const SendMail = (firstName, lastName, email, Subject, message) => {
 
     // next.js' way to handle requests
     sendEmail(mailOptions)
-        .then((result) => console.log(result))
-        .catch((error) => console.log(error.message,'errormessage in mail'));
+        .then((result) => console.log('result of sendemail'))
+        .catch((error) => console.log(error,'errormessage in mail'));
 
 }
 
