@@ -2,7 +2,7 @@
 
 import nodemailer from 'nodemailer';
 import { google } from "googleapis";
-
+require("dotenv").config();
 
 export const config = {
     api: {
